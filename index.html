@@ -2,45 +2,68 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>ตัวอย่าง CSS Padding</title>
+    <title>CSS Padding</title>
 
     <style>
-        /* CSS Padding */
-        .padding-box {
-            width: 300px;
-            background-color: #d9ecff;
-            border: 2px solid #3399ff;
-
-            padding: 20px; 
-            /* padding คือระยะห่างด้านในกรอบ */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
         }
 
-        .padding-custom {
-            margin-top: 20px;
-            background-color: #ffe0e0;
-            border: 2px solid #ff6666;
+        /* กล่องเนื้อหา */
+        .card {
+            width: 400px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            margin: 20px;
+            padding: 20px; /* CSS Padding */
+        }
 
-            padding-top: 10px;
-            padding-right: 30px;
-            padding-bottom: 20px;
-            padding-left: 30px;
+        .card h2 {
+            margin-top: 0;
+        }
+
+        /* กล่องประกาศ */
+        .notice {
+            background-color: #fff3cd;
+            border: 1px solid #ffcc00;
+            padding: 15px 25px;
+            margin: 20px;
+            width: 400px;
+        }
+
+        /* กล่องปุ่ม */
+        .btn {
+            display: inline-block;
+            background-color: #3399ff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px; /* padding ใช้จริงกับปุ่ม */
+            border-radius: 5px;
+            margin: 20px;
         }
     </style>
 </head>
 <body>
 
     <h1>CSS Padding</h1>
-    <p>ตัวอย่างการกำหนดระยะห่างด้านในของ element ด้วย CSS Padding</p>
 
-    <div class="padding-box">
-        กล่องนี้ใช้ padding: 20px;<br>
-        ข้อความจะไม่ติดขอบกล่อง
+    <!-- การ์ดข้อมูล -->
+    <div class="card">
+        <h2>ข่าวประชาสัมพันธ์</h2>
+        <p>
+            เว็บไซต์จะปิดปรับปรุงระบบในวันที่ 10 มกราคม 2026 
+            ตั้งแต่เวลา 22.00 - 24.00 น.
+        </p>
     </div>
 
-    <div class="padding-custom">
-        กล่องนี้กำหนด padding<br>
-        แต่ละด้านไม่เท่ากัน
+    <!-- กล่องประกาศ -->
+    <div class="notice">
+        ⚠ กรุณาตรวจสอบข้อมูลให้ถูกต้องก่อนทำรายการ
     </div>
+
+    <!-- ปุ่ม -->
+    <a href="#" class="btn">ยืนยันการทำรายการ</a>
 
 </body>
 </html>
